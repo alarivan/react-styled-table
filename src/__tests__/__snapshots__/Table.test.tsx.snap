@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly with all possible data and columns variants 1`] = `
+.c1 {
+  cursor: pointer;
+}
+
+.c2 {
+  min-width: 140px;
+}
+
+.c0 {
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+.c3 {
+  background: lightblue;
+}
+
+<div
+  class="c0"
+>
+  <table>
+    <thead>
+      <tr>
+        <th
+          class="c1"
+          role="button"
+        >
+          Name
+          <span>
+            ↑
+          </span>
+           
+          <span>
+            ↓
+          </span>
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          Rating
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          City
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          Country
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          class="c2"
+        >
+          test-name-1
+        </td>
+        <td
+          class="c2"
+        >
+          ~4
+        </td>
+        <td
+          class="c2"
+        >
+          Vancouver
+        </td>
+        <td
+          class="c2 c3"
+        >
+          Canada
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="c2"
+        >
+          test-name-2
+        </td>
+        <td
+          class="c2"
+        >
+          ~5
+        </td>
+        <td
+          class="c2"
+        >
+          Frankfurt
+        </td>
+        <td
+          class="c2 c3"
+        >
+          Germany
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`should render correctly with custom table cell 1`] = `
+.c1 {
+  cursor: pointer;
+}
+
+.c2 {
+  min-width: 140px;
+}
+
+.c0 {
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+.c4 {
+  background: lightblue;
+}
+
+.c3 {
+  background: green;
+}
+
+<div
+  class="c0"
+>
+  <table>
+    <thead>
+      <tr>
+        <th
+          class="c1"
+          role="button"
+        >
+          Name
+          <span>
+            ↑
+          </span>
+           
+          <span>
+            ↓
+          </span>
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          Rating
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          City
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          Country
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          class="c2 c3"
+        >
+          test-name-1
+        </td>
+        <td
+          class="c2 c3"
+        >
+          ~4
+        </td>
+        <td
+          class="c2 c3"
+        >
+          Vancouver
+        </td>
+        <td
+          class="c2 c4"
+        >
+          Canada
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="c2 c3"
+        >
+          test-name-2
+        </td>
+        <td
+          class="c2 c3"
+        >
+          ~5
+        </td>
+        <td
+          class="c2 c3"
+        >
+          Frankfurt
+        </td>
+        <td
+          class="c2 c4"
+        >
+          Germany
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`should render correctly with empty columns 1`] = `
+.c0 {
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+<div
+  class="c0"
+>
+  <table>
+    <thead>
+      <tr />
+    </thead>
+    <tbody>
+      <tr />
+      <tr />
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`should render correctly with empty columns and data 1`] = `
+.c0 {
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+<div
+  class="c0"
+>
+  <table>
+    <thead>
+      <tr />
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`should render correctly with empty data 1`] = `
+.c1 {
+  cursor: pointer;
+}
+
+.c0 {
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+<div
+  class="c0"
+>
+  <table>
+    <thead>
+      <tr>
+        <th
+          class="c1"
+          role="button"
+        >
+          Name
+          <span>
+            ↑
+          </span>
+           
+          <span>
+            ↓
+          </span>
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          Rating
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          City
+        </th>
+        <th
+          class=""
+          role="button"
+        >
+          Country
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;

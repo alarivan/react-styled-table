@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly with sortable false 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        class=""
+        role="button"
+      >
+        Name
+      </th>
+    </tr>
+  </thead>
+</table>
+`;
+
+exports[`should render correctly with sortable true 1`] = `
+.c0 {
+  cursor: pointer;
+}
+
+<table>
+  <thead>
+    <tr>
+      <th
+        class="c0"
+        role="button"
+      >
+        Name
+        <span>
+          ↑
+        </span>
+         
+        <span>
+          ↓
+        </span>
+      </th>
+    </tr>
+  </thead>
+</table>
+`;
