@@ -39,19 +39,16 @@ exports[`should render correctly with all possible data and columns variants 1`]
         </th>
         <th
           class=""
-          role="button"
         >
           Rating
         </th>
         <th
           class=""
-          role="button"
         >
           City
         </th>
         <th
           class=""
-          role="button"
         >
           Country
         </th>
@@ -150,19 +147,16 @@ exports[`should render correctly with custom table cell 1`] = `
         </th>
         <th
           class=""
-          role="button"
         >
           Rating
         </th>
         <th
           class=""
-          role="button"
         >
           City
         </th>
         <th
           class=""
-          role="button"
         >
           Country
         </th>
@@ -288,19 +282,16 @@ exports[`should render correctly with empty data 1`] = `
         </th>
         <th
           class=""
-          role="button"
         >
           Rating
         </th>
         <th
           class=""
-          role="button"
         >
           City
         </th>
         <th
           class=""
-          role="button"
         >
           Country
         </th>

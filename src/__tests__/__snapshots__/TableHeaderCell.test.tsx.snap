@@ -6,7 +6,6 @@ exports[`should render correctly with sortable false 1`] = `
     <tr>
       <th
         class=""
-        role="button"
       >
         Name
       </th>

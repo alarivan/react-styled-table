@@ -10,7 +10,8 @@ const StyledTH = styled.th`
   ${({ sortable }: StyledTHProps) => sortable && 'cursor: pointer;'}
 `
 
-export interface TableHeaderCellProps extends ReactStyledTableColumn {
+export interface TableHeaderCellProps
+  extends Pick<ReactStyledTableColumn, 'value' | 'label' | 'sortable'> {
   sortByValue?: string
   sortOrder: SortOrder
   onClick: (value: string) => void
@@ -45,7 +46,11 @@ const TableHeaderCell: React.FC<TableHeaderCellProps> = ({
   }
 
   return (
-    <StyledTH sortable={sortable} onClick={handleClick} role='button'>
+    <StyledTH
+      sortable={sortable}
+      onClick={handleClick}
+      role={sortable ? 'button' : undefined}
+    >
       {label}
       {sortable && (
         <SortToggle sort={sortByValue === value ? sortOrder : undefined} />
