@@ -4,14 +4,11 @@ import styled, { StyledComponent } from 'styled-components'
 import TableHeaderCell from './TableHeaderCell'
 import { ReactStyledTableDataItem, ReactStyledTableColumn, SortOrder } from '.'
 
-interface Props
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  > {
+interface Props {
   data: ReactStyledTableDataItem[]
   columns: ReactStyledTableColumn[]
   tableCell?: StyledComponent<'td', any, {}, never>
+  className?: string
 }
 
 export const ReactStyledTableCell = styled.td`
