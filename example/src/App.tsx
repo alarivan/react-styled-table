@@ -24,6 +24,16 @@ const CustomTable = styled(Table)`
   background: magenta;
 `
 
+const Page = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+`
+
+const Section = styled.section`
+  margin: 0 auto 1rem;
+`
+
 const data_1 = [
   {
     name: 'John',
@@ -197,11 +207,24 @@ const columns: ReactStyledTableColumn[] = [
 
 const App = () => {
   return (
-    <>
-      <Table data={data_1} columns={data_1_columns} />
-      <Table data={data_2} columns={data_2_columns} />
-      <CustomTable data={data} columns={columns} tableCell={GreenTableCell} />
-    </>
+    <Page>
+      <h1>React Styled Table Component</h1>
+      <Section>
+        <h2>Table with render functions:</h2>
+        <Table data={data_1} columns={data_1_columns} />
+      </Section>
+      <Section>
+        <h2>Table with custom table cell component in columns config:</h2>
+        <Table data={data_2} columns={data_2_columns} />
+      </Section>
+      <Section>
+        <h2>
+          Table with custom table cell components in Table as prop and in
+          columns config:
+        </h2>
+        <CustomTable data={data} columns={columns} tableCell={GreenTableCell} />
+      </Section>
+    </Page>
   )
 }
 

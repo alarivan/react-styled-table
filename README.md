@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/@alarivan/react-styled-table.svg)](https://www.npmjs.com/package/@alarivan/react-styled-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Demo
+
+[Demo](https://alarivan.github.io/react-styled-table/)
+
 ## Install
 
 [![@alarivan/react-styled-table](https://nodei.co/npm/@alarivan/react-styled-table.png)](https://npmjs.org/package/@alarivan/react-styled-table)
@@ -135,20 +139,20 @@ const App = () => {
 
 ### Props
 
-| Name      | Type                                    | Required | Description                                                                                                                                                                                  |
-| --------- | --------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name      | Type                                  | Required | Description                                                                                                                                                                                  |
+| --------- | ------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | data      | Object[]                              | true     | Data record array to be rendered                                                                                                                                                             |
 | columns   | ReactStyledTableColumn[]              | true     | Columns config see possible config values below                                                                                                                                              |
 | tableCell | StyledComponent<'td', any, {}, never> | false    | Custom styled table cell `<td>` component that will replace all table cells in `<tbody>`. If column config has `tableCellComponent` defined then table cell will be replaced with it instead |
 
 ## Column Props
 
-| Name               | Type                                                                                   | Required | Description                                                                                                                                                                         |
-| ------------------ | -------------------------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| value              | string                                                                               | true     | Key in the data record                                                                                                                                                              |
-| label              | string                                                                               | true     | Label that will be displayed in table header                                                                                                                                        |
-| sortable           | boolean                                                                              | false    | Enables data to be sorted by this column's values                                                                                                                                   |
-| tableCellComponent | StyledComponent<'td', any, {}, never>;                                               | false    | Custom styled table cell `<td>` component that will replace all table cells in the column. Has higher precedence then `tableCell` prop on `Table` component                         |
+| Name               | Type                                                                                        | Required | Description                                                                                                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| value              | string                                                                                      | true     | Key in the data record                                                                                                                                                              |
+| label              | string                                                                                      | true     | Label that will be displayed in table header                                                                                                                                        |
+| sortable           | boolean                                                                                     | false    | Enables data to be sorted by this column's values                                                                                                                                   |
+| tableCellComponent | StyledComponent<'td', any, {}, never>;                                                      | false    | Custom styled table cell `<td>` component that will replace all table cells in the column. Has higher precedence then `tableCell` prop on `Table` component                         |
 | render             | (value: ReactStyledTableDataItemValue) => ReactStyledTableDataItemValue &#124; JSX.Element; | false    | Replaces data value with the returned value for the column. This values is rendered inside table cell `<td>` if you want to replace table cell itself then use `tableCellComponent` |
 
 ## License
